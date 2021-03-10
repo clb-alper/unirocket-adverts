@@ -1,8 +1,6 @@
     
 const adverts = [
 
-`Dont miss legit BSC project join 👉 @UniRocket_CHANNELS`,
-`<b>some test text</b>`
 
 ]
 
