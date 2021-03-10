@@ -2,7 +2,7 @@ const express = require('express');
 const hbs = require('hbs')
 const fetch = require('node-fetch');
 const path = require('path')
-const adverts = require('./adverts');
+const {adverts,advertsUniswap} = require('./adverts');
 
 const app = express();
 const port = process.env.PORT || 3002
@@ -23,7 +23,8 @@ app.use(express.static(publicDirectoryPath, {
 
 app.get('', (req,res)=>{
     res.send({
-        advert: adverts 
+        advert: adverts,
+        advertUniswap: advertsUniswap 
     })
 })
 
